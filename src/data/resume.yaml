@@ -1,0 +1,139 @@
+profile:
+  name: Samuel
+  headline: Senior Frontend Engineer
+  level: Staff / Principal
+  location: Remote
+  contact:
+    email: email
+    linkedin: https://linkedin.com/in/your-handle
+    github: https://github.com/your-handle
+  summary: >
+    Staff-level Frontend Engineer with 16+ years of experience building and
+    scaling complex, data-driven applications. Proven track record of
+    establishing frontend architecture from 0→1, operating across product, ML,
+    and backend domains, and increasing engineering velocity through systems,
+    standards, and mentorship. Strong focus on performance, usability, and
+    developer efficiency. Seeking a remote Staff+/Principal role with
+    company-wide impact.
+
+core_strengths:
+  - Frontend Architecture & UI Systems
+  - Cross-Functional Leadership (Product, ML, Backend)
+  - Developer Productivity & Platform Leverage
+  - Performance, A11y, and Quality at Scale
+  - Design Systems & Scalable Component Models
+
+experience:
+  - company: WITNESS AI
+    title: Senior Software Engineer
+    scope: Staff-level scope
+    start: 2023-01
+    end: 2026-01
+    summary: >
+      First UI engineer, responsible for establishing frontend architecture and
+      enabling cross-team delivery for a rapidly evolving SaaS platform.
+    highlights:
+      - Established the frontend architecture (React + TypeScript), defining component systems, API contracts, and patterns adopted across the product.
+      - Designed, implemented, and documented a company-wide RBAC system, retrofitting the existing application and standardizing permission enforcement across all UI surfaces.
+      - Defined and aligned on RBAC API contracts with backend, enabling consistent client-side enforcement and simplifying feature development.
+      - Partnered with ML, backend, and product teams to surface model outputs through intuitive UI workflows.
+      - Led integration of enterprise SSO (WorkOS), enabling secure onboarding and supporting enterprise customer adoption.
+      - Coordinated across stakeholders to navigate ambiguity and align delivery in a fast-moving product environment.
+      - Built and evolved frontend delivery practices (CI/CD, release workflows), improving iteration speed and reliability.
+    impact: >
+      Implemented RBAC and WorkOS SSO integrations, elevating the frontend into
+      a first-class product layer used for secure, role-based workflows and
+      enabling WITNESS AI to engage multiple large enterprise clients.
+
+  - company: Southwest Airlines
+    title: Senior Software Engineer
+    scope: Consultant, Staff-level scope
+    start: 2022-06
+    end: 2023-05
+    summary: >
+      Staff-level contributor on a large-scale modernization initiative
+      migrating critical systems to a cloud-native architecture.
+    highlights:
+      - Led frontend decomposition of a legacy monolith into micro-frontends (Single-SPA), enabling independent team ownership and parallel delivery.
+      - Defined frontend boundaries and API contracts, reducing coupling and improving system maintainability.
+      - Built a GraphQL/BFF layer transforming legacy APIs into UI-optimized read models, simplifying client complexity.
+      - Designed event-driven integrations (Lambda, Kinesis, DynamoDB) to decouple frontend from backend availability constraints.
+      - Enabled safe, incremental migration through feature flags and controlled cutovers, reducing risk in a production-critical system.
+      - Mentored engineers and elevated code quality through architectural guidance and targeted reviews.
+    impact: >
+      Reduced system complexity, improved delivery velocity, and enabled
+      scalable frontend ownership across teams.
+
+  - company: Confidential Client (NDA)
+    title: Lead Frontend Engineer
+    scope: Principal-level scope
+    start: 2021-03
+    end: 2022-09
+    summary: >
+      Principal frontend engineer for a multi-application platform integrating
+      ML-driven workflows.
+    highlights:
+      - Defined frontend architecture for a React + TypeScript mono-repo, enabling multiple applications to scale independently.
+      - Partnered with ML teams to integrate classification and automation systems into user workflows.
+      - Established frontend standards for A11y, analytics, performance, and testing, improving consistency and maintainability.
+      - Built shared UI systems and tooling that reduced developer friction and accelerated feature delivery.
+      - Acted as primary frontend partner to product and design, translating ambiguous requirements into scalable implementations.
+    impact: >
+      Enabled scalable product development while integrating ML capabilities
+      into user-facing workflows.
+
+  - company: Survata
+    title: Lead Frontend Engineer
+    scope: Staff / Principal
+    start: 2015-06
+    end: 2020-04
+    summary: >
+      First frontend engineer, later de facto frontend lead for a B2B SaaS
+      analytics platform.
+    highlights:
+      - Architected and owned frontend systems across an AngularJS to React migration, enabling long-term platform evolution.
+      - Built a data visualization platform (D3-based plugin system) used across the product.
+      - Improved performance and responsiveness through architectural changes, including TTFB reduction and WebWorkers.
+      - Established developer workflows, documentation, and standards that reduced onboarding time from 1 week to 1 day.
+      - Increased team productivity by approximately 2 hours per day per engineer through tooling and workflow improvements.
+      - Mentored engineers and raised frontend quality across the organization.
+    impact: >
+      Scaled frontend from a single engineer to a mature platform supporting
+      product growth and team expansion.
+
+  - company: LinkedIn
+    title: Senior Software Engineer
+    start: 2012-03
+    end: 2014-10
+    summary: >
+      Led development of login and authentication flows used across web and
+      mobile web at LinkedIn scale.
+    highlights:
+      - Designed secure client-server interaction patterns to safely preload user context.
+      - Contributed to shared UI systems adopted across multiple teams.
+    impact: >
+      Delivered secure, scalable user-facing systems used by millions.
+
+earlier_experience:
+  - HP
+  - Starbucks
+  - Eddie Bauer
+  - Resource Interactive
+
+education:
+  degree: B.S. Computer Science & Engineering
+  school: The Ohio State University
+
+technologies:
+  - React
+  - TypeScript
+  - JavaScript (ES6+)
+  - D3
+  - Node.js
+  - AWS
+  - GraphQL
+  - HTML/CSS
+  - Webpack
+  - Vite
+  - Jest
+  - RTL

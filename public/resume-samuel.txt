@@ -1,0 +1,88 @@
+Samuel
+Senior Frontend Engineer (Staff / Principal level)
+Remote
+
+SUMMARY
+
+Staff-level Frontend Engineer with 16+ years of experience building and scaling
+complex, data-driven applications. Proven track record of establishing frontend
+architecture from 0 to 1, operating across product, ML, and backend domains,
+and increasing engineering velocity through systems, standards, and mentorship.
+Strong focus on performance, usability, and developer efficiency. Seeking a
+remote Staff+ / Principal role with company-wide impact.
+
+CORE STRENGTHS
+
+- Frontend Architecture & UI Systems
+- Cross-Functional Leadership (Product, ML, Backend)
+- Developer Productivity & Platform Leverage
+- Performance, Accessibility, and Quality at Scale
+- Design Systems & Scalable Component Models
+
+EXPERIENCE
+
+WITNESS AI
+Senior Software Engineer (Staff-level scope)
+Jan 2023 - Jan 2026
+
+- First UI engineer, responsible for establishing frontend architecture and enabling cross-team delivery for a rapidly evolving SaaS platform.
+- Established the frontend architecture (React + TypeScript), defining component systems, API contracts, and patterns adopted across the product.
+- Designed, implemented, and documented a company-wide RBAC system, retrofitting the existing application and standardizing permission enforcement across all UI surfaces.
+- Defined and aligned on RBAC API contracts with backend, enabling consistent client-side enforcement and simplifying feature development.
+- Partnered with ML, backend, and product teams to surface model outputs through intuitive UI workflows.
+- Led integration of enterprise SSO (WorkOS), enabling secure onboarding and supporting enterprise customer adoption.
+- Coordinated across stakeholders to navigate ambiguity and align delivery in a fast-moving product environment.
+- Built and evolved frontend delivery practices (CI/CD, release workflows), improving iteration speed and reliability.
+- Impact: Implemented RBAC and WorkOS SSO integrations, elevating the frontend into a first-class product layer used for secure, role-based workflows and enabling WITNESS AI to engage multiple large enterprise clients.
+
+SOUTHWEST AIRLINES
+Senior Software Engineer (Consultant, Staff-level scope)
+Jun 2022 - May 2023
+
+- Staff-level contributor on a large-scale modernization initiative migrating critical systems to a cloud-native architecture.
+- Led frontend decomposition of a legacy monolith into micro-frontends (Single-SPA), enabling independent team ownership and parallel delivery.
+- Defined frontend boundaries and API contracts, reducing coupling and improving system maintainability.
+- Built a GraphQL/BFF layer transforming legacy APIs into UI-optimized read models, simplifying client complexity.
+- Designed event-driven integrations (Lambda, Kinesis, DynamoDB) to decouple frontend from backend availability constraints.
+- Enabled safe, incremental migration through feature flags and controlled cutovers, reducing risk in a production-critical system.
+- Mentored engineers and elevated code quality through architectural guidance and targeted reviews.
+- Impact: Reduced system complexity, improved delivery velocity, and enabled scalable frontend ownership across teams.
+
+CONFIDENTIAL CLIENT (NDA)
+Lead Frontend Engineer (Principal-level scope)
+Mar 2021 - Sep 2022
+
+- Principal frontend engineer for a multi-application platform integrating ML-driven workflows.
+- Defined frontend architecture for a React + TypeScript mono-repo, enabling multiple applications to scale independently.
+- Partnered with ML teams to integrate classification and automation systems into user workflows.
+- Established frontend standards for accessibility, analytics, performance, and testing, improving consistency and maintainability.
+- Built shared UI systems and tooling that reduced developer friction and accelerated feature delivery.
+- Acted as primary frontend partner to product and design, translating ambiguous requirements into scalable implementations.
+- Impact: Enabled scalable product development while integrating ML capabilities into user-facing workflows.
+
+SURVATA
+Lead Frontend Engineer (Staff / Principal)
+Jun 2015 - Apr 2020
+
+- First frontend engineer, later de facto frontend lead for a B2B SaaS analytics platform.
+- Architected and owned frontend systems across AngularJS to React migration, enabling long-term platform evolution.
+- Built a data visualization platform (D3-based plugin system) used across the product.
+- Improved performance and responsiveness through architectural changes (TTFB reduction, WebWorkers).
+- Established developer workflows, documentation, and standards that reduced onboarding time from 1 week to 1 day.
+- Increased team productivity by approximately 2 hours per day per engineer through tooling and workflow improvements.
+- Mentored engineers and raised frontend quality across the organization.
+- Impact: Scaled frontend from a single engineer to a mature platform supporting product growth and team expansion.
+
+LINKEDIN
+Senior Software Engineer
+Mar 2012 - Oct 2014
+
+- Led development of login and authentication flows used across web and mobile web at LinkedIn scale.
+- Designed secure client-server interaction patterns to safely preload user context.
+- Contributed to shared UI systems adopted across multiple teams.
+- Impact: Delivered secure, scalable user-facing systems used by millions.
+
+TECHNOLOGIES
+
+React, TypeScript, JavaScript (ES6+), D3, Node.js, AWS, GraphQL, HTML/CSS,
+Webpack, Vite, Jest, RTL

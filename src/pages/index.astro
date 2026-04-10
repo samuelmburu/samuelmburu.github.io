@@ -1,0 +1,216 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import {
+  profile,
+  socialLinks,
+  stats,
+  strengths,
+  technologies,
+  timeline,
+} from "../data/resume";
+import { siteContent } from "../data/site";
+
+const recentTimeline = timeline.slice(0, 2);
+const additionalTimeline = timeline.slice(2);
+---
+
+<BaseLayout title={`${profile.name} | Portfolio`} description={profile.summary}>
+  <section class="hero" id="home">
+    <div>
+      <!-- <span class="eyebrow">Single-page portfolio</span> -->
+      <h1>{`${profile.headline} operating at ${profile.level} level.`}</h1>
+      <p class="lead" style="margin-top: 1.25rem;">{profile.summary}</p>
+      <p style="margin-top: 1rem; max-width: 44rem;">
+        I establish frontend architecture from 0 to 1, create the systems that let teams move faster, and translate ambiguous product and technical constraints into usable software with company-wide impact.
+      </p>
+
+      <div class="meta-links">
+        {
+          socialLinks.map((item) => (
+            <a
+              class="text-link"
+              href={item.href}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {item.label}
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  {
+    false && (
+      <section class="section" id="about">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">About</span>
+            <h2>Architecture, leverage, and complex product work.</h2>
+          </div>
+          <p>
+            Senior frontend engineer operating with Staff / Principal scope
+            across platform, product, and organizational boundaries.
+          </p>
+        </div>
+        <div class="section-grid">
+          {stats.map((item) => (
+            <article class="stat-card">
+              <span class="stat-card__value">{item.value}</span>
+              <p>{item.label}</p>
+            </article>
+          ))}
+        </div>
+        <div class="resume-grid" style="margin-top: 1rem;">
+          <article class="panel">
+            {siteContent.about.map((paragraph) => (
+              <p style="margin-top: 1rem;">{paragraph}</p>
+            ))}
+          </article>
+          <article class="panel">
+            <h3>Core strengths</h3>
+            <ul class="list">
+              {strengths.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          </article>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    false && (
+      <section class="section">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Expertise</span>
+            <h2>What I focus on.</h2>
+          </div>
+        </div>
+        <div class="section-grid">
+          {siteContent.expertise.map((item) => (
+            <article class="panel">
+              <h3>{item.title}</h3>
+              <p style="margin-top: 0.75rem;">{item.description}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  {
+    siteContent.projects.length > 2 && (
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Projects</span>
+            <h2>Personal projects and active explorations.</h2>
+          </div>
+          <p>
+            A few independent projects that reflect what you like building when
+            you are not writing a resume.
+          </p>
+        </div>
+        <div class="project-grid">
+          {siteContent.projects.map((project) => (
+            <article class="project-card">
+              <div class="project-meta">
+                <span>{project.category}</span>
+                <span>{project.year}</span>
+              </div>
+              <h3>{project.name}</h3>
+              <p style="margin-top: 0.75rem;">{project.description}</p>
+              <div class="actions">
+                <a class="text-link" href={project.href}>
+                  View section
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <section class="section" id="resume">
+    <div class="section-heading">
+      <div>
+        <!-- <span class="eyebrow">Resume</span> -->
+        <h2>Experience and supporting detail.</h2>
+      </div>
+      <!-- <p>{siteContent.availability}</p> -->
+    </div>
+    <div class="actions" style="margin-top: 0; margin-bottom: 1rem;">
+      <a class="button button--secondary" href="/resume-samuel.txt" download>
+        Download resume
+      </a>
+    </div>
+    <div class="timeline" style="grid-template-columns: 1fr; gap: 1rem;">
+      {
+        recentTimeline.map((entry) => (
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span>{entry.period}</span>
+              <span>{entry.scope}</span>
+            </div>
+            <h3>{entry.role}</h3>
+            <p style="margin-top: 0.35rem;">{entry.company}</p>
+            <p style="margin-top: 0.85rem;">{entry.summary}</p>
+            <ul class="list">
+              {entry.highlights.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+            <p style="margin-top: 1rem;">
+              <strong>Impact:</strong> {entry.impact}
+            </p>
+          </article>
+        ))
+      }
+    </div>
+    {
+      additionalTimeline.length > 0 && (
+        <details class="resume-details">
+          <summary>See more experience</summary>
+          <div class="timeline" style="grid-template-columns: 1fr; gap: 1rem; margin-top: 1rem;">
+            {
+              additionalTimeline.map((entry) => (
+                <article class="timeline-item">
+                  <div class="timeline-meta">
+                    <span>{entry.period}</span>
+                    <span>{entry.scope}</span>
+                  </div>
+                  <h3>{entry.role}</h3>
+                  <p style="margin-top: 0.35rem;">{entry.company}</p>
+                  <p style="margin-top: 0.85rem;">{entry.summary}</p>
+                  <ul class="list">
+                    {entry.highlights.map((item) => (
+                      <li>{item}</li>
+                    ))}
+                  </ul>
+                  <p style="margin-top: 1rem;">
+                    <strong>Impact:</strong> {entry.impact}
+                  </p>
+                </article>
+              ))
+            }
+          </div>
+        </details>
+      )
+    }
+    <div class="section-grid" style="margin-top: 1rem;">
+      <article class="resume-block">
+        <h3>Technologies</h3>
+        <ul class="list">
+          {technologies.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </article>
+    </div>
+  </section>
+</BaseLayout>
