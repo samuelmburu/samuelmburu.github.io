@@ -13,9 +13,12 @@
   "dependencies": {
     "@astrojs/vercel": "^10.0.4",
     "astro": "^6.1.5",
+    "astro-icon": "^1.1.0",
     "yaml": "^2.8.1"
   },
   "devDependencies": {
+    "@iconify-json/lucide": "^1.2.71",
+    "@iconify-json/mdi": "^1.2.3",
     "@astrojs/check": "^0.9.8",
     "@types/node": "^24.5.2",
     "typescript": "^5.8.3"

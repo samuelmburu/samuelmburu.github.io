@@ -32,13 +32,13 @@ export const siteContent = {
       description:
         "An Astro-based personal site designed as a long-lived content system rather than a one-off portfolio, with an emphasis on strong typography, fast navigation, and clear information density."
     },
-    {
-      name: "AI Workflow Experiments",
-      category: "Product Exploration",
-      year: "2025–2026",
-      href: "#projects",
-      description:
-        "A set of independent explorations around AI-assisted product workflows, focused on practical interfaces, model ergonomics, and how people actually interact with generated output."
-    }
+    // {
+    //   name: "AI Workflow Experiments",
+    //   category: "Product Exploration",
+    //   year: "2025–2026",
+    //   href: "#projects",
+    //   description:
+    //     "A set of independent explorations around AI-assisted product workflows, focused on practical interfaces, model ergonomics, and how people actually interact with generated output."
+    // }
   ]
 };
