@@ -1,6 +1,6 @@
 # personal-site
 
-Astro single-page portfolio site designed for free GitHub Pages hosting with optional custom domain support.
+Astro single-page portfolio site configured for free GitHub Pages hosting at the root URL, suitable for a user-site repo like `samuelmburu.github.io` with optional custom domain support.
 
 ## Structure
 
@@ -32,11 +32,23 @@ PUBLIC_SITE_URL=https://your-domain.com
 
 ## Deploy to GitHub Pages
 
-1. Push to the `main` branch.
-2. In GitHub, open `Settings -> Pages`.
-3. Set `Source` to `GitHub Actions`.
-4. Optional: add a repository variable named `PUBLIC_SITE_URL` with your final custom-domain URL, such as `https://your-domain.com`.
-5. Optional: copy [`public/CNAME.example`](./public/CNAME.example) to `public/CNAME` and replace it with your actual domain.
-6. Configure DNS for your domain in your registrar.
+This configuration assumes the published repository is the user-site repository:
 
-Without a custom domain, the site will deploy under `https://samuelmburu.github.io/personal-site/`.
+- `samuelmburu.github.io`
+
+That root-repo layout is what lets both URLs work correctly from the same build:
+
+- `https://samuelmburu.github.io`
+- `https://your-domain.com`
+
+1. Push to the `main` branch.
+2. Publish this code from the `samuelmburu.github.io` repository, not the `personal-site` project repo.
+3. In GitHub, open `Settings -> Pages`.
+4. Set `Source` to `GitHub Actions`.
+5. Optional: add a repository variable named `PUBLIC_SITE_URL` with your final custom-domain URL, such as `https://your-domain.com`.
+6. Optional: copy [`public/CNAME.example`](./public/CNAME.example) to `public/CNAME` and replace it with your actual domain when you want to enable the custom domain.
+7. Configure DNS for your domain in your registrar.
+
+Without a custom domain, the site deploys under `https://samuelmburu.github.io`.
+
+If you deploy this exact config from `personal-site` instead of `samuelmburu.github.io`, asset paths will be wrong because this build no longer uses a `/personal-site/` base.
