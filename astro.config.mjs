@@ -1,12 +1,13 @@
 import { defineConfig } from "astro/config";
 import icon from "astro-icon";
-import vercel from "@astrojs/vercel";
 
-const site = process.env.PUBLIC_SITE_URL || "https://example.com";
+const site = process.env.PUBLIC_SITE_URL || "https://samuelmburu.github.io";
+const isCustomDomain = process.env.PUBLIC_SITE_URL && !process.env.PUBLIC_SITE_URL.includes("github.io");
 
 export default defineConfig({
   site,
-  output: "server",
+  output: "static",
+  base: isCustomDomain ? "/" : "/personal-site/",
   integrations: [
     icon({
       include: {
@@ -15,5 +16,4 @@ export default defineConfig({
       },
     }),
   ],
-  adapter: vercel(),
 });

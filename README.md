@@ -1,6 +1,6 @@
 # personal-site
 
-Astro single-page portfolio site designed for Vercel deployment with a custom domain.
+Astro single-page portfolio site designed for free GitHub Pages hosting with optional custom domain support.
 
 ## Structure
 
@@ -24,18 +24,19 @@ Edit site content in [`src/data/site.ts`](./src/data/site.ts).
 
 The resume has also been serialized into YAML at [`src/data/resume.yaml`](./src/data/resume.yaml).
 
-Set your production URL in `.env`:
+Set your production URL in `.env` for local parity:
 
 ```bash
 PUBLIC_SITE_URL=https://your-domain.com
 ```
 
-## Deploy to Vercel
+## Deploy to GitHub Pages
 
-1. Import the repo into Vercel.
-2. Set `PUBLIC_SITE_URL` to your final domain in the Vercel project environment variables.
-3. Deploy.
-4. In the Vercel dashboard, open `Settings -> Domains`.
-5. Add your custom domain and follow Vercel's DNS instructions.
+1. Push to the `main` branch.
+2. In GitHub, open `Settings -> Pages`.
+3. Set `Source` to `GitHub Actions`.
+4. Optional: add a repository variable named `PUBLIC_SITE_URL` with your final custom-domain URL, such as `https://your-domain.com`.
+5. Optional: copy [`public/CNAME.example`](./public/CNAME.example) to `public/CNAME` and replace it with your actual domain.
+6. Configure DNS for your domain in your registrar.
 
-The Astro config already uses the Vercel adapter, so no extra platform-specific code is required.
+Without a custom domain, the site will deploy under `https://samuelmburu.github.io/personal-site/`.

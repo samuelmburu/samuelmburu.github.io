@@ -1,15 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { Icon } from "astro-icon/components";
-import {
-  profile,
-  socialLinks,
-  strengths,
-  technologies,
-  timeline,
-} from "../data/resume";
+import { getResumeData } from "../data/resume";
 import { siteContent } from "../data/site";
 
+const { profile, socialLinks, strengths, technologies, timeline } = await getResumeData();
 const recentTimeline = timeline.slice(0, 2);
 const additionalTimeline = timeline.slice(2);
 ---
