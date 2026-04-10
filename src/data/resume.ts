@@ -50,7 +50,7 @@ export const strengths = resume.core_strengths;
 export const technologies = resume.technologies;
 
 export const socialLinks = [
-  { label: "Email", href: `mailto:${profile.contact.email}` },
+  // { label: "Email", href: `mailto:${profile.contact.email}` },
   { label: "LinkedIn", href: profile.contact.linkedin },
   { label: "GitHub", href: profile.contact.github },
 ];

@@ -28,8 +28,9 @@ const navItems = [
     <header class="site-header">
       <div class="shell site-header__inner">
         <a class="brand" href="/">
-          <span class="brand__name">{profile.name}</span>
-          <span class="brand__meta">{profile.location}</span>
+          <span class="brand__mark" aria-hidden="true">
+            <span class="brand__mark-chevron">&gt;</span><span title="{profile.name}">sk</span>
+          </span>
         </a>
         <nav class="nav" aria-label="Primary">
           {
