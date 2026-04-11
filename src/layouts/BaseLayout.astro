@@ -24,6 +24,13 @@ const navItems = [
 <html lang="en">
   <head>
     <SiteHead title={title} description={description} />
+    <script is:inline>
+      (() => {
+        const stored = localStorage.getItem("theme");
+        const theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -44,6 +51,14 @@ const navItems = [
             }
           </nav>
           <div class="header-socials" aria-label="Social links">
+            <button class="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle color theme">
+              <span class="theme-toggle__sun" aria-hidden="true">
+                <Icon name="lucide:sun" size="1.2rem" />
+              </span>
+              <span class="theme-toggle__moon" aria-hidden="true">
+                <Icon name="lucide:moon" size="1.2rem" />
+              </span>
+            </button>
             {
               socialLinks.map((item) => (
                 <a
@@ -71,5 +86,18 @@ const navItems = [
     <footer class="shell site-footer">
        <p class="muted text-sm text-right">Built with Astro &copy; {new Date().getFullYear()}</p>
     </footer>
+    <script is:inline>
+      (() => {
+        const root = document.documentElement;
+        const button = document.querySelector(".theme-toggle");
+        if (!button) return;
+
+        button.addEventListener("click", () => {
+          const next = root.dataset.theme === "dark" ? "light" : "dark";
+          root.dataset.theme = next;
+          localStorage.setItem("theme", next);
+        });
+      })();
+    </script>
   </body>
 </html>
