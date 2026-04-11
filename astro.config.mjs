@@ -9,6 +9,7 @@ const customDomain = existsSync("./public/CNAME")
 
 const site = process.env.PUBLIC_SITE_URL
   || (customDomain ? `https://${customDomain}` : "https://samuelmburu.github.io");
+const isCI = process.env.CI === "true";
 
 export default defineConfig({
   site,
@@ -21,6 +22,11 @@ export default defineConfig({
       },
     }),
     pdf({
+      launch: isCI
+        ? {
+            args: ["--no-sandbox", "--disable-setuid-sandbox"],
+          }
+        : undefined,
       pages: {
         "/resume-pdf": {
           path: "/Samuel-Kimama-Resume.pdf",
