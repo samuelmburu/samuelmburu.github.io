@@ -126,7 +126,10 @@ const resumeDownloadHref = import.meta.env.DEV ? "/resume-pdf" : "/Samuel-Kimama
     {
       additionalTimeline.length > 0 && (
         <details class="resume-details">
-          <summary class="resume-action">See more experience</summary>
+          <summary class="resume-action">
+            <span class="resume-details__more">See more experience</span>
+            <span class="resume-details__less">Show less experience</span>
+          </summary>
           <div class="timeline" style="grid-template-columns: 1fr; gap: 1rem; margin-top: 1rem;">
             {
               additionalTimeline.map((entry) => (
