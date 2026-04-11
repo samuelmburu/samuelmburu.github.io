@@ -5,6 +5,7 @@
   --accent: #be5b2e;
   --accent-deep: #7d3414;
   --content-width: 1020px;
+  --header-height: 5.5rem;
   --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", serif;
   --font-body: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
 }
@@ -59,7 +60,7 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-  padding: 1.25rem 0;
+  padding: 1.375rem 0;
 }
 
 .brand {
@@ -141,6 +142,12 @@ img {
 main {
   flex: 1;
   padding: 1rem 0 5rem;
+}
+
+.u-screen-fit {
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  align-items: center;
 }
 
 .site-footer {
