@@ -41,14 +41,54 @@ const technologyLine = technologies.join(" • ");
       }
 
       body {
-        width: var(--page-width);
-        min-height: var(--page-height);
+        min-height: 100vh;
       }
 
       main {
-        width: 100%;
+        width: var(--page-width);
+        min-height: var(--page-height);
         padding: var(--page-margin);
         display: grid; gap: 0.05in;
+        background: #ffffff;
+      }
+
+      @media screen {
+        html,
+        body {
+          background:
+            radial-gradient(circle at top left, rgba(37, 99, 235, 0.06), transparent 28%),
+            linear-gradient(180deg, #f4f1ea 0%, #ebe6dc 100%);
+        }
+
+        body {
+          display: flex;
+          justify-content: center;
+          padding: 2rem 1rem 3rem;
+        }
+
+        main {
+          box-shadow:
+            0 24px 60px rgba(22, 22, 22, 0.14),
+            0 8px 22px rgba(22, 22, 22, 0.08);
+          border: 1px solid rgba(17, 17, 17, 0.08);
+        }
+      }
+
+      @media print {
+        html,
+        body {
+          background: #ffffff;
+        }
+
+        body {
+          display: block;
+          padding: 0;
+        }
+
+        main {
+          box-shadow: none;
+          border: 0;
+        }
       }
 
       .header {

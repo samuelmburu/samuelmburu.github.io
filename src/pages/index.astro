@@ -7,6 +7,7 @@ import { siteContent } from "../data/site";
 const { profile, socialLinks, strengths, technologies, timeline } = await getResumeData();
 const recentTimeline = timeline.slice(0, 2);
 const additionalTimeline = timeline.slice(2);
+const resumeDownloadHref = import.meta.env.DEV ? "/resume-pdf" : "/Samuel-Kimama-Resume.pdf";
 ---
 
 <BaseLayout title={`${profile.name} | Portfolio`} description={profile.summary}>
@@ -106,7 +107,13 @@ const additionalTimeline = timeline.slice(2);
       <!-- <p>{siteContent.availability}</p> -->
     </div>
     <div class="actions" style="margin-top: 0; margin-bottom: 1rem;">
-      <a class="button button--secondary" href="/Samuel-Kimama-Resume.pdf" download>
+      <a
+        class="button button--secondary"
+        href={resumeDownloadHref}
+        download={import.meta.env.DEV ? undefined : true}
+        target={import.meta.env.DEV ? "_blank" : undefined}
+        rel={import.meta.env.DEV ? "noreferrer" : undefined}
+      >
         <Icon name="lucide:download" size="1rem" aria-hidden="true" />
         Download resume
       </a>
