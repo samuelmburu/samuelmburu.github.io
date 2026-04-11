@@ -19,6 +19,8 @@ html {
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
   font-family: var(--font-body);
   color: var(--text);
   background:
@@ -137,7 +139,15 @@ img {
 }
 
 main {
+  flex: 1;
   padding: 1rem 0 5rem;
+}
+
+.site-footer {
+  justify-content: flex-end;
+  padding-top: 0;
+  padding-bottom: 1.5rem;
+  text-align: right;
 }
 
 .hero {
@@ -216,6 +226,34 @@ p {
 .hero-subtitle {
   margin-top: 0.65rem;
   max-width: 16ch;
+}
+
+/* Hero job-search: editorial aside — visible hierarchy, still no heavy panel. */
+.availability-callout {
+  margin-top: 1.6rem;
+  max-width: 38rem;
+  padding: 0.2rem 0 0.2rem 1rem;
+  border-left: 2px solid rgba(190, 91, 46, 0.42);
+  border-left: 2px solid color-mix(in srgb, var(--accent) 58%, transparent);
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.availability-callout__eyebrow {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+}
+
+.availability-callout__text {
+  margin: 0;
+  font-size: 1.03rem;
+  line-height: 1.6;
+  color: var(--text);
 }
 
 .hero-facts {
@@ -334,6 +372,12 @@ p {
 
 .muted {
   color: var(--muted);
+}
+.text-sm {
+  font-size: .85rem;
+}
+.text-right {
+  text-align: right;
 }
 
 .project-meta,
