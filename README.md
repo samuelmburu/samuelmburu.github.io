@@ -46,7 +46,7 @@ That root-repo layout is what lets both URLs work correctly from the same build:
 3. In GitHub, open `Settings -> Pages`.
 4. Set `Source` to `GitHub Actions`.
 5. Optional: add a repository variable named `PUBLIC_SITE_URL` with your final custom-domain URL, such as `https://your-domain.com`.
-6. Optional: copy [`public/CNAME.example`](./public/CNAME.example) to `public/CNAME` and replace it with your actual domain when you want to enable the custom domain.
+6. Optional: update [`public/CNAME`](./public/CNAME) with your actual domain when you want to enable or change the custom domain.
 7. Configure DNS for your domain in your registrar.
 
 Without a custom domain, the site deploys under `https://samuelmburu.github.io`.
