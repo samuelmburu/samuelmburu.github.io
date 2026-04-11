@@ -32,8 +32,6 @@ experience:
       - Defined and aligned on RBAC API contracts with backend, enabling consistent client-side enforcement and simplifying feature development.
       - Partnered with ML, backend, and product teams to surface model outputs through intuitive UI workflows.
       - Led integration of enterprise SSO (WorkOS), enabling secure onboarding and supporting enterprise customer adoption.
-      - Coordinated across stakeholders to navigate ambiguity and align delivery in a fast-moving product environment.
-      - Built and evolved frontend delivery practices (CI/CD, release workflows), improving iteration speed and reliability.
     impact: >
       Implemented RBAC and WorkOS SSO integrations, elevating the frontend into
       a first-class product layer used for secure, role-based workflows and
@@ -53,7 +51,6 @@ experience:
       - Built a GraphQL/BFF layer transforming legacy APIs into UI-optimized read models, simplifying client complexity.
       - Designed event-driven integrations (Lambda, Kinesis, DynamoDB) to decouple frontend from backend availability constraints.
       - Enabled safe, incremental migration through feature flags and controlled cutovers, reducing risk in a production-critical system.
-      - Mentored engineers and elevated code quality through architectural guidance and targeted reviews.
     impact: >
       Reduced system complexity, improved delivery velocity, and enabled
       scalable frontend ownership across teams.
@@ -70,8 +67,7 @@ experience:
       - Defined frontend architecture for a React + TypeScript mono-repo, enabling multiple applications to scale independently.
       - Partnered with ML teams to integrate classification and automation systems into user workflows.
       - Established frontend standards for A11y, analytics, performance, and testing, improving consistency and maintainability.
-      - Built shared UI systems and tooling that reduced developer friction and accelerated feature delivery.
-      - Acted as primary frontend partner to product and design, translating ambiguous requirements into scalable implementations.
+      - Built design systems and tooling that reduced developer friction and accelerated feature delivery.
     impact: >
       Enabled scalable product development while integrating ML capabilities
       into user-facing workflows.
@@ -87,10 +83,8 @@ experience:
     highlights:
       - Architected and owned frontend systems across an AngularJS to React migration, enabling long-term platform evolution.
       - Built a data visualization platform (D3-based plugin system) used across the product.
-      - Improved performance and responsiveness through architectural changes, including TTFB reduction and WebWorkers.
+      - Improved performance and responsiveness through architectural changes, including 67% TTFB reduction for return visitors.
       - Established developer workflows, documentation, and standards that reduced onboarding time from 1 week to 1 day.
-      - Increased team productivity by approximately 2 hours per day per engineer through tooling and workflow improvements.
-      - Mentored engineers and raised frontend quality across the organization.
     impact: >
       Scaled frontend from a single engineer to a mature platform supporting
       product growth and team expansion.
