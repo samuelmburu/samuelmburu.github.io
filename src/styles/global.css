@@ -373,13 +373,35 @@ p {
 
 .resume-details summary {
   cursor: pointer;
-  font-weight: 600;
-  color: var(--text);
   list-style: none;
 }
 
 .resume-details summary::-webkit-details-marker {
   display: none;
+}
+
+.resume-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(26, 24, 22, 0.12);
+  background: rgba(255, 250, 244, 0.7);
+  box-shadow: 0 10px 24px rgba(38, 28, 16, 0.06);
+  color: var(--text);
+  font-weight: 600;
+  transition: background-color 120ms ease, border-color 120ms ease, transform 120ms ease;
+}
+
+.resume-action:hover,
+.resume-action:focus-visible {
+  background: rgba(255, 250, 244, 0.9);
+  border-color: rgba(26, 24, 22, 0.2);
+  color: var(--text);
+  transform: translateY(-1px);
 }
 
 .technologies-list {

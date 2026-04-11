@@ -90,7 +90,7 @@ const resumeDownloadHref = import.meta.env.DEV ? "/resume-pdf" : "/Samuel-Kimama
     </div>
     <div class="actions" style="margin-top: 0; margin-bottom: 1rem;">
       <a
-        class="button button--secondary"
+        class="button button--secondary resume-action"
         href={resumeDownloadHref}
         download={import.meta.env.DEV ? undefined : true}
         target={import.meta.env.DEV ? "_blank" : undefined}
@@ -126,7 +126,7 @@ const resumeDownloadHref = import.meta.env.DEV ? "/resume-pdf" : "/Samuel-Kimama
     {
       additionalTimeline.length > 0 && (
         <details class="resume-details">
-          <summary>See more experience</summary>
+          <summary class="resume-action">See more experience</summary>
           <div class="timeline" style="grid-template-columns: 1fr; gap: 1rem; margin-top: 1rem;">
             {
               additionalTimeline.map((entry) => (
