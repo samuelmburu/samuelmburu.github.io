@@ -1,6 +1,7 @@
 import { readFileSync, existsSync } from "node:fs";
 import { defineConfig } from "astro/config";
 import icon from "astro-icon";
+import pdf from "astro-pdf";
 
 const customDomain = existsSync("./public/CNAME")
   ? readFileSync("./public/CNAME", "utf-8").trim()
@@ -17,6 +18,19 @@ export default defineConfig({
       include: {
         mdi: ["linkedin", "github"],
         lucide: ["download"],
+      },
+    }),
+    pdf({
+      pages: {
+        "/resume-pdf": {
+          path: "/Samuel-Kimama-Resume.pdf",
+          throwOnFail: true,
+          pdf: {
+            format: "Letter",
+            printBackground: true,
+            preferCSSPageSize: true,
+          },
+        },
       },
     }),
   ],
