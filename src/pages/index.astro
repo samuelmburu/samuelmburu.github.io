@@ -4,7 +4,7 @@ import { Icon } from "astro-icon/components";
 import { getResumeData } from "../data/resume";
 import { siteContent } from "../data/site";
 
-const { profile, socialLinks, strengths, technologies, timeline } = await getResumeData();
+const { profile, strengths, technologies, timeline } = await getResumeData();
 const recentTimeline = timeline.slice(0, 2);
 const additionalTimeline = timeline.slice(2);
 const resumeDownloadHref = import.meta.env.DEV ? "/resume-pdf" : "/Samuel-Kimama-Resume.pdf";
@@ -25,24 +25,6 @@ const resumeDownloadHref = import.meta.env.DEV ? "/resume-pdf" : "/Samuel-Kimama
           </li>
         ))}
       </ul> -->
-      <div class="social-links" aria-label="Social links">
-        {
-          socialLinks.map((item) => (
-            <a
-              class="social-link"
-              href={item.href}
-              target="_blank"
-              rel="noreferrer"
-              aria-label={item.label}
-              title={item.label}
-            >
-              {item.label === "LinkedIn" && <Icon name="mdi:linkedin" size="1rem" aria-hidden="true" />}
-              {item.label === "GitHub" && <Icon name="mdi:github" size="1rem" aria-hidden="true" />}
-              <span>{item.label}</span>
-            </a>
-          ))
-        }
-      </div>
     </div>
   </section>
 
@@ -171,10 +153,10 @@ const resumeDownloadHref = import.meta.env.DEV ? "/resume-pdf" : "/Samuel-Kimama
         </details>
       )
     }
-    <div class="section-grid" style="margin-top: 1rem;">
+    <div class="section">
       <article class="resume-block">
         <h3>Technologies</h3>
-        <ul class="list">
+        <ul class="list technologies-list">
           {technologies.map((item) => (
             <li>{item}</li>
           ))}
