@@ -6,7 +6,7 @@ export const siteContent = {
   ],
   availabilityEyebrow: "Open to roles",
   availability:
-    "Seeking a remote Staff+ frontend role with broad product and platform impact.",
+    "Targeting remote Staff frontend roles with broad product and platform ownership.",
   expertise: [
     {
       title: "Architecture",
